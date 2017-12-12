@@ -2,14 +2,4 @@
 
 
 
-2. var checker = require('nu-html-checker');
-
-var batch = checker.validate([ '.html']);
-
-batch.on('progress', function (e) {
-  console.log(checker.format('stylish', e.value), '\n');
-});
-
-batch.on('end', function (err) {
-  if (err) console.error(err.stack);
-})
+2. nu-html-checker *.html
